@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: space-between;
   background-color: #1c9993;
-  padding: 0 10%;
+  padding: 2% 10%;
 }
 
 .logo {
@@ -20,6 +20,7 @@
   padding: 0;
   display: flex;
   align-items: baseline;
+  flex-flow: row wrap;
 }
 
 .header li {
@@ -44,5 +45,52 @@
   border-radius: 12px;
   padding: 0 1rem;
   margin-left: 0.5rem;
+}
+
+@media screen and (max-width: 955px) {
+  .header li {
+    padding: 5px;
+  }
+  .header a {
+    font-size: 1rem;
+    white-space: nowrap;
+  }
+  .badge {
+    margin-left: 30%;
+  }
+}
+
+@media screen and (max-width: 557px) {
+  .header li {
+    padding: 2px;
+  }
+  .header a {
+    font-size: .8rem;
+    white-space: nowrap;
+  }
+  .badge {
+    margin-left: 38%;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .header {
+    height: auto;
+    flex-flow: column;
+  }
+  .header ul {
+    flex-flow: column;
+  }
+  .header li {
+    padding: 2px;
+    margin: 0 auto;
+  }
+  .header a {
+    font-size: .8rem;
+    white-space: nowrap;
+  }
+  .badge {
+    margin-left: 3px;
+  }
 }
 
